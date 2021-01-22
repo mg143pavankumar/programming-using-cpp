@@ -56,12 +56,15 @@ class Employee{
 };
 
 int main(){
-    Employee employee[50]; // we can add upto 50 employee details
+    
+    
     int numberOfEmployeeDetails;
     system("cls");
 
-    cout << "Please enter the number of employees (MAX = 50): ";
+    cout << "Please enter the number of employees: ";
     cin >> numberOfEmployeeDetails;
+
+    Employee employee[numberOfEmployeeDetails]; // we can add upto 50 employee details
 
     //Getting employee details
     for (int i = 0; i < numberOfEmployeeDetails; i++)
